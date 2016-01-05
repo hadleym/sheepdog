@@ -2,11 +2,13 @@ package sheepdog.tdl.gamestates;
 
 import java.awt.Graphics2D;
 
+import sheepdog.gop.main.SpriteSheet;
 import sheepdog.tdl.gamestate.GameState;
 import sheepdog.tdl.gamestate.GameStateManager;
 
 public class DungeonLevelLoader extends GameState {
 
+	SpriteSheet test = new SpriteSheet();
 	public DungeonLevelLoader(GameStateManager gsm) {
 		super(gsm);
 		
@@ -20,7 +22,7 @@ public class DungeonLevelLoader extends GameState {
 
 	@Override
 	public void init() {
-		// TODO Auto-generated method stub
+		test.setSpriteSheet(LoadImage.)
 		
 	}
 
