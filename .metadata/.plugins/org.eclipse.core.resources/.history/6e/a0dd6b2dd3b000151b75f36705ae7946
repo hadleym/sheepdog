@@ -1,0 +1,9 @@
+package sheepdog.gop.main;
+
+public class SpriteSheet {
+	private BufferedImage spriteSheet;
+	public SpriteSheet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

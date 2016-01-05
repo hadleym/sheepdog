@@ -1,0 +1,13 @@
+package sheepdog.tdl.main;
+import sheepdog.gop.main.GameWindow;
+public class Main {
+
+
+	public static void main(String[] args) {
+		GameWindow frame = new GameWindow("TheDLooter", 1280, 720);
+		frame.setFullscreen(3);
+		frame.setVisible(true);
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package sheepdog.gop.main;
+
+public class GameWindow {
+
+	public GameWindow() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
