@@ -2,13 +2,17 @@ package sheepdog.tdl.gamestates;
 
 import java.awt.Graphics2D;
 
+import sheepdog.gop.main.LoadImage;
 import sheepdog.gop.main.SpriteSheet;
 import sheepdog.tdl.gamestate.GameState;
 import sheepdog.tdl.gamestate.GameStateManager;
+import sheepdog.tdl.generator.Map;
+import sheepdog.tdl.main.Main;
 
 public class DungeonLevelLoader extends GameState {
 
-	SpriteSheet test = new SpriteSheet();
+	Map map;
+	
 	public DungeonLevelLoader(GameStateManager gsm) {
 		super(gsm);
 		
@@ -16,19 +20,21 @@ public class DungeonLevelLoader extends GameState {
 
 	@Override
 	public void tick(double deltaTime) {
-		// TODO Auto-generated method stub
+		map.tick(deltaTime);
 		
 	}
 
 	@Override
 	public void init() {
-		test.setSpriteSheet(LoadImage.)
+		map = new Map();
+		map.init();
 		
 	}
 
 	@Override
 	public void render(Graphics2D g) {
 		g.drawString("hello world", 200	, 200);
+		map.render(g);
 		
 	}
 
